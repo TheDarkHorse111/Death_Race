@@ -109,13 +109,14 @@ public class GameManager_Script : MonoBehaviour
         myPrefabGunlist=new List<GameObject>();
         foreach(GameObject i in Points )
         {      
+
+          
           GameObject _Shield= Instantiate(myPrefabShield,i.transform.position, Quaternion.identity);
-          GameObject _Gun=Instantiate(myPrefabGun,i.transform.position+new Vector3(10,0,6), Quaternion.identity);
-        
+          GameObject _Gun=Instantiate(myPrefabGun,i.transform.position+new Vector3(-10,0,-8), Quaternion.identity);
           myPrefabShieldlist.Add(_Shield);
           myPrefabGunlist.Add(_Gun);
         }
-
+  
 
   }
 
