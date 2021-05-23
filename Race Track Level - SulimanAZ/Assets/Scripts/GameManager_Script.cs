@@ -64,7 +64,7 @@ public class GameManager_Script : MonoBehaviour
                       if(flag)
                       { 
                          
-                        player=Instantiate(sheder,GameObject.Find("sedan").transform.position, Quaternion.identity);
+                          player=Instantiate(sheder,GameObject.Find("Free_Racing_Car_Gray").transform.position, Quaternion.identity);
                           readytomove=true;
                           flag=false;
                       }
@@ -99,7 +99,7 @@ public class GameManager_Script : MonoBehaviour
    {
        if(readytomove)
        {
-        player.transform.position= GameObject.Find("sedan").transform.position;
+        player.transform.position= GameObject.Find("Free_Racing_Car_Gray").transform.position;
        }
    }
      
