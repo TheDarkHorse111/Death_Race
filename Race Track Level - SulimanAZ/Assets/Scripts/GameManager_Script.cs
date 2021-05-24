@@ -11,8 +11,9 @@ public class GameManager_Script : MonoBehaviour
     public GameObject myPrefabGun;
     public GameObject sheder;
      GameObject player;
-    static public int lab = 1;
-    public Text textlab; 
+     public static int lab = 1;
+     public static String PlayerName;
+     public Text textlab; 
 
       bool readytomove=false; 
       bool flag=true; 
@@ -40,7 +41,7 @@ public class GameManager_Script : MonoBehaviour
    {
        foreach(GameObject i in myPrefabGunlist)
                 {
-                  
+                   
                   if(i.activeSelf.Equals(false))
                   { 
                       if(Gunshooting.Timetofire<=1)
@@ -62,26 +63,24 @@ public class GameManager_Script : MonoBehaviour
                   if(i.activeSelf.Equals(false))
                   { 
                       if(flag)
-                      { 
-                         
-                          player=Instantiate(sheder,GameObject.Find("Free_Racing_Car_Gray").transform.position, Quaternion.identity);
+                      {  
+                          player=Instantiate(sheder,GameObject.Find(PlayerName).transform.position, Quaternion.identity);
                           readytomove=true;
                           flag=false;
                       }
                     if(DisappearingTime>0)
                       {
                             DisappearingTime-=1f/DisappearingTime;
-                            
-                      
-                      }else
-                      {
+                      }
+                    else
+                    {
                             DisappearingTime=40f;
                             flag=true;
                             readytomove=false;
                             Destroy(player);
                             i.SetActive(true);
                             break;
-                      }
+                    }
                     
                   }
 
@@ -99,7 +98,7 @@ public class GameManager_Script : MonoBehaviour
    {
        if(readytomove)
        {
-        player.transform.position= GameObject.Find("Free_Racing_Car_Gray").transform.position;
+        player.transform.position= GameObject.Find(PlayerName).transform.position;
        }
    }
      
