@@ -19,11 +19,7 @@ public class AIController: MonoBehaviour
     float lookAhead = 10;
     float lastTimeMoving = 0;
 
-    private void Awake()
-    {
-        RTWP = GameObject.FindObjectOfType<RaceTrackWP>();
-    }
-
+    
     void Start()
     {
         cc = this.GetComponent<CarController>();
