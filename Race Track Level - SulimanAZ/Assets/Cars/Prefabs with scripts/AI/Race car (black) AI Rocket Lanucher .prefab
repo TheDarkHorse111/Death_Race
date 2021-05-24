@@ -1745,7 +1745,7 @@ GameObject:
   - component: {fileID: 5672156402252861284}
   m_Layer: 0
   m_Name: 'Race car (black) AI Rocket Lanucher '
-  m_TagString: Untagged
+  m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
