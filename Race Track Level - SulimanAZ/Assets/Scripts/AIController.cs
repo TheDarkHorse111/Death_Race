@@ -19,7 +19,11 @@ public class AIController: MonoBehaviour
     float lookAhead = 10;
     float lastTimeMoving = 0;
 
-    
+    private void Awake()
+    {
+        RTWP = GameObject.FindObjectOfType<RaceTrackWP>();
+    }
+
     void Start()
     {
         cc = this.GetComponent<CarController>();
@@ -74,7 +78,7 @@ public class AIController: MonoBehaviour
             cc.rb.gameObject.transform.position = RTWP.Waypoints[currentTrackerWP].transform.position + Vector3.up * 2 +
                 new Vector3(Random.Range(-1, 1), 0, Random.Range(-1, 1));
             tracker.transform.position = cc.rb.gameObject.transform.position + Vector3.forward;
-            cc.rb.gameObject.layer = 8;
+            
             Vector3 relativePos = tracker.transform.position - transform.position;
 
             if (Vector3.Dot(transform.forward, relativePos) < 0.0f)
@@ -84,9 +88,10 @@ public class AIController: MonoBehaviour
                 cc.rb.transform.rotation= Quaternion.Euler(0, 0, 0);
 
             }
+            else
+               cc.rb.transform.LookAt(-RTWP.Waypoints[currentTrackerWP].transform.position);
             
-
-
+            cc.rb.gameObject.layer = 8;
             this.GetComponent<Ghost>().enabled = true;
             Invoke("ResetLayer", 3);
         }
