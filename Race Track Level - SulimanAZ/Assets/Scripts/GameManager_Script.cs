@@ -9,13 +9,21 @@ public class GameManager_Script : MonoBehaviour
     public GameObject []Points;
     public GameObject myPrefabShield;
     public GameObject myPrefabGun;
-    public GameObject sheder;
-     GameObject player;
-    static public int lab = 1;
-    public Text textlab; 
 
-      bool readytomove=false; 
+
+    public Object_IN[] Objects;
+    Object_IN _Gameobject;
+    GameObject _Shield;
+
+
+
+
+
+      public static int lab = 1;
       bool flag=true; 
+
+
+
      List<GameObject> myPrefabShieldlist;
      List<GameObject> myPrefabGunlist;
     float DisappearingTime=40f; 
@@ -33,14 +41,34 @@ public class GameManager_Script : MonoBehaviour
     {  
       GunsManager();
       ShieldsManager();
-      shieldMove();
-     // labcounter();
+      labcounter();
     }
+
+
+
+   public void ObjectName(String Name,Vector3 Player)
+   {
+      _Gameobject= Array.Find(Objects,Object=>Object.Name==Name);
+      _Shield=Instantiate(_Gameobject._GameObject1,Player, Quaternion.identity);
+   }
+   public GameObject returnObject()
+   {
+    return _Shield;
+   }
+   public void DestroyObject( )
+   {
+      Destroy(_Shield);
+   }
+ 
+
+
+
+
+
    void GunsManager() 
    {
        foreach(GameObject i in myPrefabGunlist)
                 {
-                  
                   if(i.activeSelf.Equals(false))
                   { 
                       if(Gunshooting.Timetofire<=1)
@@ -48,9 +76,7 @@ public class GameManager_Script : MonoBehaviour
                          i.SetActive(true);
                          break;
                       }                  
-                          
-                    
-                    
+
                   }
                 }
    } 
@@ -62,27 +88,18 @@ public class GameManager_Script : MonoBehaviour
                   if(i.activeSelf.Equals(false))
                   { 
                       if(flag)
-                      { 
-                         
-                          player=Instantiate(sheder,GameObject.Find("Free_Racing_Car_Gray").transform.position, Quaternion.identity);
-                          readytomove=true;
-                          flag=false;
+                      {   
                       }
                     if(DisappearingTime>0)
                       {
                             DisappearingTime-=1f/DisappearingTime;
-                            
-                      
                       }else
                       {
                             DisappearingTime=40f;
                             flag=true;
-                            readytomove=false;
-                            Destroy(player);
                             i.SetActive(true);
                             break;
                       }
-                    
                   }
 
                 } 
@@ -90,33 +107,24 @@ public class GameManager_Script : MonoBehaviour
    void labcounter()
    {
 
-        if(lab<3)
-         textlab.text="lab :"+lab.ToString();
-         else { textlab.text="( ͡❛ ‿‿ ͡❛)";}
+       // if(lab<3)
+       //  textlab.text="lab :"+lab.ToString();
+        // else { textlab.text="( ͡❛ ‿‿ ͡❛)";}
 
    }
-   void shieldMove()
-   {
-       if(readytomove)
-       {
-        player.transform.position= GameObject.Find("Free_Racing_Car_Gray").transform.position;
-       }
-   }
-     
   void initialize()
   {
         myPrefabShieldlist=new List<GameObject>();
         myPrefabGunlist=new List<GameObject>();
+
         foreach(GameObject i in Points )
         {      
-
-          
           GameObject _Shield= Instantiate(myPrefabShield,i.transform.position, Quaternion.identity);
-          GameObject _Gun=Instantiate(myPrefabGun,i.transform.position+new Vector3(-10,0,-8), Quaternion.identity);
+          GameObject _Gun=Instantiate(myPrefabGun,i.transform.position+new Vector3(10,0,6), Quaternion.identity);
           myPrefabShieldlist.Add(_Shield);
           myPrefabGunlist.Add(_Gun);
         }
-  
+
 
   }
 

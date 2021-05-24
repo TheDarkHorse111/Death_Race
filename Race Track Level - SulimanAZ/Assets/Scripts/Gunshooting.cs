@@ -3,17 +3,13 @@ using UnityEngine.Audio;
 using UnityEngine;
  
 public class Gunshooting : MonoBehaviour
-{
+{    
+     public  GUN []GUNS=new GUN[2];
      private float Damge=20f;
-     public float fireRate=3f;
-    
-     
-     public Camera gun;
-     public ParticleSystem Effects;
-     public GameObject impactEffect;
+     public float fireRate=3f;   
     //public AudioSource sound;
      private float NextTimetoFire=0f;
-     public static bool CanIFire = false;
+     public  bool CanIFire = false;
       
      public static float Timetofire= 50f;
     private void Start()
@@ -22,39 +18,27 @@ public class Gunshooting : MonoBehaviour
     }
     // Update is called once per frame
     void FixedUpdate()
-    {
-      
-
-          Debug.Log(Timetofire);
+    {  
           if (CanIFire && Timetofire>=0f)
            {
             Timetofire-=1f/ Timetofire;
             if (Input.GetButton("Fire1") && (Time.time >= NextTimetoFire))
             {
-
                 NextTimetoFire = Time.time + 1f / fireRate;
                 Shoot();
             }
-
-
         }
          if (Timetofire < 0)
          { Timetofire = 50f; CanIFire = false; }
        
-
-      
-        
-     
-     
     }
 
     void Shoot() 
-    {
-        Effects.Play();
-      //  sound.Play();
-       // FindObjectOfType<audiomaneger>().Play("anas");
+    {  
+        foreach(GUN i in GUNS){
+            i.Effects.Play();
 
-        if (Physics.Raycast(gun.transform.position, gun.transform.forward, out RaycastHit hit))
+        if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward, out RaycastHit hit))
         {
            
             Debug.Log(hit.transform.name);
@@ -65,16 +49,19 @@ public class Gunshooting : MonoBehaviour
                 player.takedamge(Damge);
             }
            
-            GameObject DostroryGo =Instantiate(impactEffect,hit.point,Quaternion.LookRotation(hit.normal));
+            GameObject DostroryGo =Instantiate(i.impactEffect,hit.point,Quaternion.LookRotation(hit.normal));
              
             Destroy(DostroryGo,2f);
         }
 
+        }
+       
+       // sound.Play();
+       // FindObjectOfType<audiomaneger>().Play("anas");
     }
     private void OnCollisionEnter(Collision collision)
     {
-         
-          
+  
     }
  
 }
