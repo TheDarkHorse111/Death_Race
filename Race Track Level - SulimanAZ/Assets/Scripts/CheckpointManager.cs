@@ -13,7 +13,18 @@ public class CheckpointManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        checkpointCount = GameObject.FindGameObjectsWithTag("Checkpint").Length;
+        GameObject[] cps = GameObject.FindGameObjectsWithTag("Checkpoint");
+        checkpointCount = cps.Length;
+
+        foreach(GameObject c in cps)
+        {
+            if (c.name == "0")
+            {
+                lastCP = c;
+                break;
+            }
+        }    
+
     }
 
     // Update is called once per frame
@@ -25,9 +36,11 @@ public class CheckpointManager : MonoBehaviour
             if (thisCPNum == nextCheckpoint) 
             {
                 lastCP = other.gameObject;
+
                 checkpoint = thisCPNum;
                 if (checkpoint == 0)
                     lap++;
+
                 nextCheckpoint++;
                 if (nextCheckpoint >= checkpointCount)
                     nextCheckpoint = 0;
