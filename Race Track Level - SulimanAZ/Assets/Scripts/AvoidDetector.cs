@@ -6,7 +6,7 @@ public class AvoidDetector : MonoBehaviour
 {
     public float avoidPath = 0;
     public float avoidTime = 0;
-    float avoidLength = 0;
+    float avoidLength = 1;
     float wanderDistance = 4;
 
     private void OnCollisionStay(Collision collision)
