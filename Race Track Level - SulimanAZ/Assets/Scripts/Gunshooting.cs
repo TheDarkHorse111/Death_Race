@@ -37,7 +37,7 @@ public class Gunshooting : MonoBehaviour
     {  
         foreach(GUN i in GUNS){
             i.Effects.Play();
-
+        FindObjectOfType<AudioManager>().Play("GUNSound");
         if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward, out RaycastHit hit))
         {
            
@@ -50,7 +50,7 @@ public class Gunshooting : MonoBehaviour
             }
            
             GameObject DostroryGo =Instantiate(i.impactEffect,hit.point,Quaternion.LookRotation(hit.normal));
-             
+                     FindObjectOfType<AudioManager>().Play("bulletimpact");
             Destroy(DostroryGo,2f);
         }
 
