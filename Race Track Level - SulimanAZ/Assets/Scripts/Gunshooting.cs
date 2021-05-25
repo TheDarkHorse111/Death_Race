@@ -3,7 +3,12 @@ using UnityEngine.Audio;
 using UnityEngine;
  
 public class Gunshooting : MonoBehaviour
-{    
+{   internal enum GUNType{
+        RocketGUN,
+        MachineGUN,
+      
+    }
+    [SerializeField]private GUNType guntype;
      public  GUN []GUNS=new GUN[2];
      private float Damge=20f;
      public float fireRate=3f;   
@@ -37,7 +42,8 @@ public class Gunshooting : MonoBehaviour
     {  
         foreach(GUN i in GUNS){
             i.Effects.Play();
-        FindObjectOfType<AudioManager>().Play("GUNSound");
+        if(guntype==GUNType.MachineGUN){  FindObjectOfType<AudioManager>().Play("MachineGUNSound");}
+        else if(guntype==GUNType.RocketGUN) {FindObjectOfType<AudioManager>().Play("RocketGUNSound");}
         if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward, out RaycastHit hit))
         {
            
@@ -50,8 +56,12 @@ public class Gunshooting : MonoBehaviour
             }
            
             GameObject DostroryGo =Instantiate(i.impactEffect,hit.point,Quaternion.LookRotation(hit.normal));
-                     FindObjectOfType<AudioManager>().Play("bulletimpact");
             Destroy(DostroryGo,2f);
+            if(guntype==GUNType.MachineGUN){FindObjectOfType<AudioManager>().Play("MachineGUNImpact");}
+            else if(guntype==GUNType.RocketGUN) {FindObjectOfType<AudioManager>().Play("RocketGUNImpact");}
+         
+            
+
         }
 
         }

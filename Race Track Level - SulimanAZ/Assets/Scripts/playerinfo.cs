@@ -46,7 +46,6 @@ void shiledStart()
         }
         }
 }
-
 void shieldMove()
    {
        if(readytomove)
@@ -65,7 +64,10 @@ void shieldMove()
     }
     public void Die()
     {
-        Destroy(gameObject);
+       FindObjectOfType<AudioManager>().Play("RocketGUNImpact");
+       FindObjectOfType<GameManager_Script>().ObjectName("Explosion",transform.position);
+       gameObject.SetActive(false);
+      
     }
     public void initialize()
     {
