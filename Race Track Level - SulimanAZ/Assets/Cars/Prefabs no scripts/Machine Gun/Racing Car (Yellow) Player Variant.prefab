@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4240093847574905222
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3049418755242660029, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67c26cae537bde4439477b56e772a816, type: 2}
+    - target: {fileID: 4039257486037495577, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124779594098420197, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_Name
+      value: Racing Car (Yellow) Player Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125679003681973769, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.536726
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8694954
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6252396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127662645155825363, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538022861189807796, guid: 553f77c26a53567489c62b3323da626a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 553f77c26a53567489c62b3323da626a, type: 3}
