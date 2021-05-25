@@ -19,9 +19,11 @@ public class AIController: MonoBehaviour
     float lookAhead = 10;
     float lastTimeMoving = 0;
 
+    CheckpointManager cpm;
+
     private void Awake()
     {
-        RTWP = GameObject.FindObjectOfType<RaceTrackWP>();
+        RTWP = FindObjectOfType<RaceTrackWP>();
     }
 
     void Start()
@@ -72,24 +74,21 @@ public class AIController: MonoBehaviour
         Vector3 localTarget;
         if (cc.rb.velocity.magnitude > 1)
             lastTimeMoving = Time.time;
+        if (cpm == null)
+            cpm = GetComponent<CheckpointManager>();
 
         if (Time.time > lastTimeMoving + 4)
         {
-            cc.rb.gameObject.transform.position = RTWP.Waypoints[currentTrackerWP].transform.position + Vector3.up * 2 +
-                new Vector3(Random.Range(-1, 1), 0, Random.Range(-1, 1));
-            tracker.transform.position = cc.rb.gameObject.transform.position + Vector3.forward;
+            cc.rb.gameObject.transform.position = cpm.lastCP.transform.position + Vector3.up * 2;
+            cc.rb.gameObject.transform.rotation = cpm.lastCP.transform.rotation;
+            tracker.transform.position = cpm.lastCP.transform.position;
             
             Vector3 relativePos = tracker.transform.position - transform.position;
 
             if (Vector3.Dot(transform.forward, relativePos) < 0.0f)
-            {
                 tracker.transform.position = cc.rb.gameObject.transform.position + -Vector3.forward;
-                cc.rb.transform.LookAt(RTWP.Waypoints[currentTrackerWP].transform.position);
-                cc.rb.transform.rotation= Quaternion.Euler(0, 0, 0);
 
-            }
-            else
-               cc.rb.transform.LookAt(-RTWP.Waypoints[currentTrackerWP].transform.position);
+         
             
             cc.rb.gameObject.layer = 8;
             this.GetComponent<Ghost>().enabled = true;
