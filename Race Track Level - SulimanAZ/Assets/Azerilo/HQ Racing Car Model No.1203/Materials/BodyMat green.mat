@@ -78,6 +78,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - CarHealth: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -104,6 +105,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_37650C31: {r: 0.5058824, g: 0.8666667, b: 0.21176471, a: 0}
+    - Color_9D749DCE: {r: 0.7830189, g: 0.72735184, b: 0.09233712, a: 0}
     - _BaseColor: {r: 0.5051008, g: 0.86764705, b: 0.21053195, a: 1}
     - _Color: {r: 0.5051008, g: 0.86764705, b: 0.210532, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
