@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AI
   - Checkpoint
+  - Road
   layers:
   - Default
   - TransparentFX

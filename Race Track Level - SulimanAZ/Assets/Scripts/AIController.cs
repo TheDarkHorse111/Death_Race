@@ -70,6 +70,11 @@ public class AIController: MonoBehaviour
    
     void Update()
     {
+        if(!RaceManager.racing)
+        {
+            lastTimeMoving = Time.time;
+            return;
+        }
         ProgressTracker();
         Vector3 localTarget;
         if (cc.rb.velocity.magnitude > 1)
@@ -77,7 +82,7 @@ public class AIController: MonoBehaviour
         if (cpm == null)
             cpm = GetComponent<CheckpointManager>();
 
-        if (Time.time > lastTimeMoving + 4)
+        if (Time.time > lastTimeMoving + 4 )
         {
             cc.rb.gameObject.transform.position = cpm.lastCP.transform.position + Vector3.up * 2;
             cc.rb.gameObject.transform.rotation = cpm.lastCP.transform.rotation;

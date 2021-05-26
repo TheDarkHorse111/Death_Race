@@ -19,7 +19,7 @@ public class CarController : MonoBehaviour
     
     [SerializeField]private float currentSpeed;
     private List<WheelCollider> AllWheels = new List<WheelCollider>();
-    private float Transformation;
+    [HideInInspector]public float Transformation;
     private float rotation;
     private float Brakes;
     private bool isbraking;
