@@ -5,8 +5,8 @@ using UnityEngine;
 public class CamSmoth : MonoBehaviour
 {
     public Transform target;
-    public float distance = 1.6f;
-    public float height = 0.4f;
+    public float distance = 10f;
+    public float height = 3f;
     public float damping = 0.7f;
     public bool smoothRotation = true;
     public bool followBehind = true;
