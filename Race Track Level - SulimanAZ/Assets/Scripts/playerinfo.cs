@@ -55,11 +55,19 @@ void shieldMove()
    }
     public void takedamge(float amount)
     {
-        health -= amount;
-        if (health <= 0)
+        if(CanIUseShiled)
         {
-            Die();
+         return;
         }
+        else
+        {
+            health -= amount;
+            if (health <= 0)
+             {
+            Die();
+             }
+        }
+     
 
     }
     public void Die()

@@ -34,7 +34,10 @@ public class Gunshooting : MonoBehaviour
             }
         }
          if (Timetofire < 0)
-         { Timetofire = 50f; CanIFire = false; }
+         { 
+             Timetofire = 50f;
+             CanIFire = false;
+        }
        
     }
 
@@ -44,15 +47,17 @@ public class Gunshooting : MonoBehaviour
             i.Effects.Play();
         if(guntype==GUNType.MachineGUN){  FindObjectOfType<AudioManager>().Play("MachineGUNSound");}
         else if(guntype==GUNType.RocketGUN) {FindObjectOfType<AudioManager>().Play("RocketGUNSound");}
-        if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward, out RaycastHit hit))
+         
+        if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward,out RaycastHit hit,1000f))
         {
            
-            Debug.Log(hit.transform.name);
+           
            
             playerinfo player = hit.transform.GetComponent<playerinfo>();
             if (player != null)
             {
-                player.takedamge(Damge);
+               if(guntype==GUNType.MachineGUN) player.takedamge(Damge+20f);
+               else player.takedamge(Damge);
             }
            
             GameObject DostroryGo =Instantiate(i.impactEffect,hit.point,Quaternion.LookRotation(hit.normal));
