@@ -18,7 +18,7 @@ public class CamSmoth : MonoBehaviour
     }
     void FixedUpdate()
     {
-
+        if (target == null) return;
         Vector3 wantedPosition;
         if (followBehind)
             wantedPosition = target.TransformPoint(0, height, -distance);
