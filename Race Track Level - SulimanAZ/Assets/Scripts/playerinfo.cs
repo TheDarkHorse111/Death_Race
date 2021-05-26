@@ -43,12 +43,13 @@ void shiledStart()
             flag=true;
             readytomove=false;
             FindObjectOfType<GameManager_Script>().DestroyObject();
+            Destroy(_Shield);
         }
         }
 }
 void shieldMove()
    {
-       if(readytomove)
+       if(readytomove&&_Shield!=null)
        {
         _Shield.transform.position=transform.position;
        }

@@ -39,7 +39,7 @@ public class Gunshooting : MonoBehaviour
 
     }else if(CanIFire && Timetofire>=0f&&playertype==PlayerType.human)
     {   
-        Debug.Log("Player shoiting his Name :"+transform.name);
+        Debug.Log("Player shooting his Name :"+transform.name);
          playershoot();
 
     }
@@ -60,14 +60,14 @@ public class Gunshooting : MonoBehaviour
         i.Effects.Play();
         if(guntype==GUNType.MachineGUN){  FindObjectOfType<AudioManager>().Play("MachineGUNSound");}
         else if(guntype==GUNType.RocketGUN) {FindObjectOfType<AudioManager>().Play("RocketGUNSound");} 
-        if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward,out RaycastHit hit,1000f))
+        if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward,out RaycastHit hit,50000f*Time.time))
         {
            
          
            
           
             playerinfo player = hit.transform.GetComponent<playerinfo>();
-              Debug.Log(hit.transform.name);
+        //      Debug.Log(hit.transform.name);
             if (player != null)
             {
                if(guntype==GUNType.MachineGUN) player.takedamge(Damge+20f);

@@ -53,7 +53,9 @@ public class GameManager_Script : MonoBehaviour
    }
    public GameObject returnObject()
    {
-    return _Shield;
+ 
+       return _Shield;
+       
    }
    public void DestroyObject( )
    {

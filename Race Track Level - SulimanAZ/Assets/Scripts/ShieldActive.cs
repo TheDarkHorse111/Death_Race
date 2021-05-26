@@ -6,8 +6,15 @@ public class ShieldActive : MonoBehaviour
 {      
     private void OnTriggerEnter(Collider other)
     {         
-               other.GetComponent<playerinfo>().CanIUseShiled=true;
-               gameObject.SetActive(false);              
+              
+        if( other.GetComponent<playerinfo>().CanIUseShiled==true)
+        {
+         return;
+        }else
+        {
+           other.GetComponent<playerinfo>().CanIUseShiled=true;    
+           gameObject.SetActive(false);
+        }
     }
 
  
