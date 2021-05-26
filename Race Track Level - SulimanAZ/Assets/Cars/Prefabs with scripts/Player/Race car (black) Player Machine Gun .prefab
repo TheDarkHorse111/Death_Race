@@ -2926,6 +2926,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   maxSpeed: 150
   currentSpeed: 0
+  Transformation: 0
   SkidSound: {fileID: 3792727545092486183}
   HighAccel: {fileID: 2815363779712362151}
   smoke: {fileID: 19800000, guid: 98c58c8dd46640c49bb5f557afafea7c, type: 3}
@@ -2975,12 +2976,10 @@ MonoBehaviour:
   playertype: 1
   GUNS:
   - GUNName: LeftGUN
-    AIM: {fileID: 0}
     Effects: {fileID: 6875050722446126637}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
   - GUNName: RightGUN
-    AIM: {fileID: 0}
     Effects: {fileID: 1396861742433428933}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
