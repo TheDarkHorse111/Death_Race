@@ -46,25 +46,25 @@ MonoBehaviour:
   Sounds:
   - Name: MachineGUNSound
     Clip: {fileID: 8300000, guid: 64ffac9fbddfda044b07267794166518, type: 3}
-    volume: 0.818
-    pitch: 1
+    volume: 1
+    pitch: 3
     loop: 0
     Source: {fileID: 0}
   - Name: MachineGUNImpact
     Clip: {fileID: 8300000, guid: 02e6f93eeb752504fa4ff6532f93a3d1, type: 3}
-    volume: 0.585
-    pitch: 1
+    volume: 1
+    pitch: 3
     loop: 0
     Source: {fileID: 0}
   - Name: RocketGUNSound
     Clip: {fileID: 8300000, guid: 573b21d5575fdba43a6dc01068c61360, type: 3}
-    volume: 0.772
+    volume: 1
     pitch: 1
     loop: 0
     Source: {fileID: 0}
   - Name: RocketGUNImpact
     Clip: {fileID: 8300000, guid: 51318e2411777b544bb91b43a0305fb4, type: 3}
-    volume: 0.459
+    volume: 0.813
     pitch: 1
     loop: 0
     Source: {fileID: 0}

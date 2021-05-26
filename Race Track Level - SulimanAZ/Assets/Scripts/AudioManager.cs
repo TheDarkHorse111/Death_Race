@@ -27,6 +27,10 @@ public class AudioManager :MonoBehaviour
             s.Source.clip=s.Clip;
             s.Source.pitch=s.pitch;
             s.Source.volume=s.volume;
+            s.Source.spatialBlend=1.0f;
+            s.Source.minDistance=5f;
+            s.Source.maxDistance=50f;
+            s.Source.priority=129;
             s.Source.loop=s.loop;
         }
 

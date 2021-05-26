@@ -9,6 +9,8 @@ public AudioClip Clip;
 public float volume;
 [Range(.1f,3f)]
 public float pitch;
+//[Range(0f,1f)]
+///public float SpatialBlend;
    public bool loop;
 
 [HideInInspector]
