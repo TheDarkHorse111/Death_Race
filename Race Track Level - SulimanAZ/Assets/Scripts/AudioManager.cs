@@ -32,6 +32,7 @@ public class AudioManager :MonoBehaviour
             s.Source.maxDistance=50f;
             s.Source.priority=129;
             s.Source.loop=s.loop;
+            
         }
 
 

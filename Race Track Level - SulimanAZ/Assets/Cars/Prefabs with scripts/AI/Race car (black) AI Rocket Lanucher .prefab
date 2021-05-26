@@ -1822,6 +1822,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   maxSpeed: 150
   currentSpeed: 0
+  Transformation: 0
   SkidSound: {fileID: 4153256592205146685}
   HighAccel: {fileID: 3031770508560300221}
   smoke: {fileID: 19800000, guid: 98c58c8dd46640c49bb5f557afafea7c, type: 3}
@@ -1882,9 +1883,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RTWP: {fileID: 0}
-  brakingSensitivity: 3
-  steeringSensitivity: 0.01
-  accelSensitivity: 0.3
+  brakingSensitivity: 1
+  steeringSensitivity: 0.04
+  accelSensitivity: 1
 --- !u!114 &2889595472112180166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1898,11 +1899,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guntype: 0
+  playertype: 0
   GUNS:
   - GUNName: RightGUN
+    AIM: {fileID: 0}
     Effects: {fileID: 7721927045849596651}
     impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
   - GUNName: LeftGUN
+    AIM: {fileID: 0}
     Effects: {fileID: 5033987248080454399}
     impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
   fireRate: 3
