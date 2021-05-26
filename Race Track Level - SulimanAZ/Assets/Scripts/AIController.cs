@@ -16,7 +16,7 @@ public class AIController: MonoBehaviour
 
     GameObject tracker;
     int currentTrackerWP = 0;
-    float lookAhead = 10;
+    float lookAhead = 12;
     float lastTimeMoving = 0;
 
     CheckpointManager cpm;
