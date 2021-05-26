@@ -2972,12 +2972,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guntype: 1
+  playertype: 1
   GUNS:
   - GUNName: LeftGUN
+    AIM: {fileID: 0}
     Effects: {fileID: 6875050722446126637}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
   - GUNName: RightGUN
+    AIM: {fileID: 0}
     Effects: {fileID: 1396861742433428933}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
