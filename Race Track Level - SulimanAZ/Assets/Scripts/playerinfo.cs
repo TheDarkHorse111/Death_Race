@@ -11,7 +11,7 @@ public class playerinfo : MonoBehaviour
     bool readytomove=false; 
     bool flag=true; 
     GameObject _Shield;
-     public bool CanIUseShiled=false;
+    public bool CanIUseShiled=false;
 
     void Start()
     {   

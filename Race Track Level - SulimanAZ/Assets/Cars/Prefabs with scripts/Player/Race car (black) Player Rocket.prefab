@@ -2981,6 +2981,7 @@ GameObject:
   - component: {fileID: 5974814911611675404}
   - component: {fileID: 8542123334370198391}
   - component: {fileID: 1741864626349560556}
+  - component: {fileID: 5509749883740865140}
   m_Layer: 0
   m_Name: Race car (black) Player Rocket
   m_TagString: Player
@@ -3141,6 +3142,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7616119, y: 0.98112106, z: 4.277191}
   m_Center: {x: -0.023796082, y: 0.5980549, z: -0.087905884}
+--- !u!114 &5509749883740865140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8063108109718389089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lap: 0
+  checkpoint: -1
+  lastCP: {fileID: 0}
 --- !u!1 &8063117017730298911
 GameObject:
   m_ObjectHideFlags: 0

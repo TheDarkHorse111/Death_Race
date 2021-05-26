@@ -12,6 +12,10 @@ public class CamSmoth : MonoBehaviour
     public bool followBehind = true;
     public float rotationDamping = 50.0f;
 
+    private void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     void FixedUpdate()
     {
 

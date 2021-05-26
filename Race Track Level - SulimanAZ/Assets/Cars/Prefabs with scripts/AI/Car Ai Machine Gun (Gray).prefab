@@ -1132,6 +1132,7 @@ GameObject:
   - component: {fileID: 5408551837527917874}
   - component: {fileID: 6726632631316329658}
   - component: {fileID: 7198551242646523812}
+  - component: {fileID: 4796635179833332418}
   m_Layer: 0
   m_Name: Car Ai Machine Gun (Gray)
   m_TagString: AI
@@ -1308,6 +1309,21 @@ MonoBehaviour:
       type: 3}
   fireRate: 3
   CanIFire: 0
+--- !u!114 &4796635179833332418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110590045161059588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lap: 0
+  checkpoint: -1
+  lastCP: {fileID: 0}
 --- !u!1 &8415630498688610590
 GameObject:
   m_ObjectHideFlags: 0

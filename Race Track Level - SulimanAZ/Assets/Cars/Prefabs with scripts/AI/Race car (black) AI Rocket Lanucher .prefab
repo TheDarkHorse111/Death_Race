@@ -1745,6 +1745,7 @@ GameObject:
   - component: {fileID: 2889595472112180166}
   - component: {fileID: 8472678989286224352}
   - component: {fileID: 7715449429874127407}
+  - component: {fileID: 7531574150805331274}
   m_Layer: 0
   m_Name: 'Race car (black) AI Rocket Lanucher '
   m_TagString: AI
@@ -1935,6 +1936,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4874268, y: 0.98844814, z: 4.1880493}
   m_Center: {x: -0.008056641, y: 0.60861444, z: -0.12567139}
+--- !u!114 &7531574150805331274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7250332131825255303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lap: 0
+  checkpoint: -1
+  lastCP: {fileID: 0}
 --- !u!1 &7250340464831872331
 GameObject:
   m_ObjectHideFlags: 0

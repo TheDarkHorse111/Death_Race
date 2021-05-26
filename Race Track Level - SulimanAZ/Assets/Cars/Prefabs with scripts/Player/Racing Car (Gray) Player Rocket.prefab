@@ -1173,6 +1173,7 @@ GameObject:
   - component: {fileID: 292295507782967328}
   - component: {fileID: 1072506682932260131}
   - component: {fileID: 4078196589136630947}
+  - component: {fileID: 1654499501504782905}
   m_Layer: 0
   m_Name: Racing Car (Gray) Player Rocket
   m_TagString: Player
@@ -1333,6 +1334,21 @@ MonoBehaviour:
     impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
   fireRate: 3
   CanIFire: 0
+--- !u!114 &1654499501504782905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980779070281323972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lap: 0
+  checkpoint: -1
+  lastCP: {fileID: 0}
 --- !u!1 &9214286010839712356
 GameObject:
   m_ObjectHideFlags: 0

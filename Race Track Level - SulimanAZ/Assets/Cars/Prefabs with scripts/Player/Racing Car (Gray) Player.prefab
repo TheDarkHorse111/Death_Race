@@ -1207,6 +1207,7 @@ GameObject:
   - component: {fileID: 1474394717730501646}
   - component: {fileID: 5698124679814047761}
   - component: {fileID: 8516367480585131094}
+  - component: {fileID: 4072595579166173407}
   m_Layer: 0
   m_Name: Racing Car (Gray) Player
   m_TagString: Player
@@ -1369,6 +1370,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7237549, y: 1.2690125, z: 4.0683594}
   m_Center: {x: -0.024780273, y: 0.78767395, z: 0.045295715}
+--- !u!114 &4072595579166173407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124779594098420197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lap: 0
+  checkpoint: -1
+  lastCP: {fileID: 0}
 --- !u!1001 &4376583819436110753
 PrefabInstance:
   m_ObjectHideFlags: 0

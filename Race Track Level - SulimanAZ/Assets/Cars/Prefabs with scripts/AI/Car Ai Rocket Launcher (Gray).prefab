@@ -919,6 +919,7 @@ GameObject:
   - component: {fileID: 7107096434695412623}
   - component: {fileID: 4950084752545025827}
   - component: {fileID: 8834491046213692787}
+  - component: {fileID: 6442265216354393081}
   m_Layer: 0
   m_Name: Car Ai Rocket Launcher (Gray)
   m_TagString: AI
@@ -1109,6 +1110,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7409973, y: 1.1879196, z: 4.0803833}
   m_Center: {x: -0.008956909, y: 0.8213577, z: -0.0079956055}
+--- !u!114 &6442265216354393081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613446968139761852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lap: 0
+  checkpoint: -1
+  lastCP: {fileID: 0}
 --- !u!1 &7920895353222401190
 GameObject:
   m_ObjectHideFlags: 0

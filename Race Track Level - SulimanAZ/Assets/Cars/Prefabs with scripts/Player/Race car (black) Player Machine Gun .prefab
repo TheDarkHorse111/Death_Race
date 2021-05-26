@@ -2849,6 +2849,7 @@ GameObject:
   - component: {fileID: -2156145391005096751}
   - component: {fileID: 7358327829421817340}
   - component: {fileID: 7265861961451703237}
+  - component: {fileID: 8781217924361776962}
   m_Layer: 0
   m_Name: 'Race car (black) Player Machine Gun '
   m_TagString: Player
@@ -3011,6 +3012,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8003845, y: 1.1973076, z: 4.114441}
   m_Center: {x: -0.0011901855, y: 0.72670174, z: -0.10595703}
+--- !u!114 &8781217924361776962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610933763349405085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lap: 0
+  checkpoint: -1
+  lastCP: {fileID: 0}
 --- !u!1 &7610948133614107263
 GameObject:
   m_ObjectHideFlags: 0
