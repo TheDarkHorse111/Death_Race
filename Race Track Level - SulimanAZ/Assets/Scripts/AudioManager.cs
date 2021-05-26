@@ -1,4 +1,4 @@
-﻿ using UnityEngine.Audio;
+ using UnityEngine.Audio;
  using UnityEngine;
  using System;
 
@@ -18,7 +18,6 @@ public class AudioManager :MonoBehaviour
              Destroy(gameObject);
              return;
          }
-       
           DontDestroyOnLoad(gameObject);
 
         foreach(Sound s in Sounds)
@@ -28,11 +27,9 @@ public class AudioManager :MonoBehaviour
             s.Source.pitch=s.pitch;
             s.Source.volume=s.volume;
             s.Source.spatialBlend=1.0f;
-            s.Source.minDistance=5f;
-            s.Source.maxDistance=50f;
-            s.Source.priority=129;
-            s.Source.loop=s.loop;
-            
+            s.Source.minDistance=10f;
+             s.Source.maxDistance=250f;
+            s.Source.loop=s.loop;            
         }
 
 

@@ -5,11 +5,11 @@ using UnityEngine;
 public class playerinfo : MonoBehaviour
 {
     public float health = 100f;
-    public float Score = 0f;
-    public 
-     float DisappearingTime=40f; 
+
+    public  float DisappearingTime=40f; 
     bool readytomove=false; 
     bool flag=true; 
+    float  DeathTime;
     GameObject _Shield;
     public bool CanIUseShiled=false;
 
@@ -75,12 +75,27 @@ void shieldMove()
     {
        FindObjectOfType<AudioManager>().Play("RocketGUNImpact");
        FindObjectOfType<GameManager_Script>().ObjectName("Explosion",transform.position);
+       DeathTime=Time.time;
        gameObject.SetActive(false);
       
     }
-    public void initialize()
-    {
-     
+    
+
+    public void Revive()
+    {   
+       if(health <=0)
+       {
+        if(DeathTime>Time.time+2)
+        {
+          Debug.Log("the Death time is : "+DeathTime);  
+          Debug.Log("the Curent time is : "+Time.time+2);  
+         health=100f;
+         gameObject.SetActive(true);
+         }
+        
+       } 
+
+
     }
 
 }
