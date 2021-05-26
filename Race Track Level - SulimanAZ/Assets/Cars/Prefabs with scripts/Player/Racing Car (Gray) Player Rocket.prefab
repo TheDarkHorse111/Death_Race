@@ -1174,6 +1174,7 @@ GameObject:
   - component: {fileID: 1072506682932260131}
   - component: {fileID: 4078196589136630947}
   - component: {fileID: 1654499501504782905}
+  - component: {fileID: -762206396071769933}
   m_Layer: 0
   m_Name: Racing Car (Gray) Player Rocket
   m_TagString: Player
@@ -1250,6 +1251,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   maxSpeed: 150
   currentSpeed: 0
+  Transformation: 0
   SkidSound: {fileID: 1843000351558531898}
   HighAccel: {fileID: 1353885247871146978}
   smoke: {fileID: 19800000, guid: 98c58c8dd46640c49bb5f557afafea7c, type: 3}
@@ -1328,11 +1330,9 @@ MonoBehaviour:
   playertype: 1
   GUNS:
   - GUNName: RightGUN
-    AIM: {fileID: 0}
     Effects: {fileID: 6566839858694063785}
     impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
   - GUNName: LeftGUN
-    AIM: {fileID: 0}
     Effects: {fileID: 6963740141459461048}
     impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
   fireRate: 3
@@ -1352,6 +1352,43 @@ MonoBehaviour:
   lap: 0
   checkpoint: -1
   lastCP: {fileID: 0}
+--- !u!114 &-762206396071769933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980779070281323972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ba0ab8fe9443749b8892285372963a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Name: MachineGUNSound
+    Clip: {fileID: 8300000, guid: 64ffac9fbddfda044b07267794166518, type: 3}
+    volume: 1
+    pitch: 3
+    loop: 0
+    Source: {fileID: 0}
+  - Name: MachineGUNImpact
+    Clip: {fileID: 8300000, guid: 02e6f93eeb752504fa4ff6532f93a3d1, type: 3}
+    volume: 1
+    pitch: 3
+    loop: 0
+    Source: {fileID: 0}
+  - Name: RocketGUNSound
+    Clip: {fileID: 8300000, guid: 573b21d5575fdba43a6dc01068c61360, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    Source: {fileID: 0}
+  - Name: RocketGUNImpact
+    Clip: {fileID: 8300000, guid: 51318e2411777b544bb91b43a0305fb4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    Source: {fileID: 0}
 --- !u!1 &9214286010839712356
 GameObject:
   m_ObjectHideFlags: 0

@@ -1208,6 +1208,7 @@ GameObject:
   - component: {fileID: 5698124679814047761}
   - component: {fileID: 8516367480585131094}
   - component: {fileID: 4072595579166173407}
+  - component: {fileID: 6052113058522150149}
   m_Layer: 0
   m_Name: Racing Car (Gray) Player
   m_TagString: Player
@@ -1284,6 +1285,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   maxSpeed: 150
   currentSpeed: 0
+  Transformation: 0
   SkidSound: {fileID: 698640014608516891}
   HighAccel: {fileID: 209488987848304579}
   smoke: {fileID: 19800000, guid: 98c58c8dd46640c49bb5f557afafea7c, type: 3}
@@ -1333,12 +1335,10 @@ MonoBehaviour:
   playertype: 1
   GUNS:
   - GUNName: LeftGUN
-    AIM: {fileID: 0}
     Effects: {fileID: 8394616060488076985}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
   - GUNName: RightGUN
-    AIM: {fileID: 0}
     Effects: {fileID: 6546454468571667173}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
@@ -1388,6 +1388,43 @@ MonoBehaviour:
   lap: 0
   checkpoint: -1
   lastCP: {fileID: 0}
+--- !u!114 &6052113058522150149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124779594098420197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ba0ab8fe9443749b8892285372963a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Name: MachineGUNSound
+    Clip: {fileID: 8300000, guid: 64ffac9fbddfda044b07267794166518, type: 3}
+    volume: 1
+    pitch: 3
+    loop: 0
+    Source: {fileID: 0}
+  - Name: MachineGUNImpact
+    Clip: {fileID: 8300000, guid: 02e6f93eeb752504fa4ff6532f93a3d1, type: 3}
+    volume: 1
+    pitch: 3
+    loop: 0
+    Source: {fileID: 0}
+  - Name: RocketGUNSound
+    Clip: {fileID: 8300000, guid: 573b21d5575fdba43a6dc01068c61360, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    Source: {fileID: 0}
+  - Name: RocketGUNImpact
+    Clip: {fileID: 8300000, guid: 51318e2411777b544bb91b43a0305fb4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    Source: {fileID: 0}
 --- !u!1001 &4376583819436110753
 PrefabInstance:
   m_ObjectHideFlags: 0
