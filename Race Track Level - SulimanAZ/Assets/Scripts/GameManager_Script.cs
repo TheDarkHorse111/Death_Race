@@ -6,11 +6,10 @@ using UnityEngine.UI;
 
 public class GameManager_Script : MonoBehaviour
 {
-    public GameObject []Points;
+    public GameObject []ShiledPoints;
+    public GameObject []GUNPoints;
     public GameObject myPrefabShield;
     public GameObject myPrefabGun;
-
-
     public Object_IN[] Objects;
     Object_IN _Gameobject;
     GameObject _Shield;
@@ -119,11 +118,16 @@ public class GameManager_Script : MonoBehaviour
         myPrefabShieldlist=new List<GameObject>();
         myPrefabGunlist=new List<GameObject>();
 
-        foreach(GameObject i in Points )
+        foreach(GameObject i in ShiledPoints )
         {      
           GameObject _Shield= Instantiate(myPrefabShield,i.transform.position, Quaternion.identity);
-          GameObject _Gun=Instantiate(myPrefabGun,i.transform.position+new Vector3(10,0,6), Quaternion.identity);
           myPrefabShieldlist.Add(_Shield);
+        
+        }
+         foreach(GameObject i in GUNPoints )
+        {      
+          
+          GameObject _Gun   = Instantiate(myPrefabGun,i.transform.position, Quaternion.identity);
           myPrefabGunlist.Add(_Gun);
         }
 
