@@ -21,6 +21,7 @@ public class playerinfo : MonoBehaviour
     {  
           shiledStart();
           shieldMove(); 
+          Revive();
     }
 void shiledStart()
 {

@@ -5,20 +5,11 @@
 public class AudioManager :MonoBehaviour 
 {
     public Sound[] Sounds ;
-    public static AudioManager instance;
+    
      
     void Awake()
      {
-         if(instance==null)
-         {
-           instance=this;
-
-         }else
-         {
-             Destroy(gameObject);
-             return;
-         }
-          DontDestroyOnLoad(gameObject);
+          
 
         foreach(Sound s in Sounds)
         {
@@ -27,8 +18,8 @@ public class AudioManager :MonoBehaviour
             s.Source.pitch=s.pitch;
             s.Source.volume=s.volume;
             s.Source.spatialBlend=1.0f;
-            s.Source.minDistance=10f;
-             s.Source.maxDistance=250f;
+            s.Source.minDistance=20f;
+             s.Source.maxDistance=500f;
             s.Source.loop=s.loop;            
         }
 
