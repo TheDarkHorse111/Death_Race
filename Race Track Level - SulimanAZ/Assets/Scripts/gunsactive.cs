@@ -8,12 +8,12 @@ public class gunsactive : MonoBehaviour
         {    
        
        
-        if(other.GetComponent<Gunshooting>().CanIFire==true)
+        if(other.GetComponentInChildren<Gunshooting>().CanIFire==true)
         {
          return;
         }else
         {
-             other.GetComponent<Gunshooting>().CanIFire=true;
+           other.GetComponentInChildren<Gunshooting>().CanIFire=true;
              gameObject.SetActive(false);
         }
          
