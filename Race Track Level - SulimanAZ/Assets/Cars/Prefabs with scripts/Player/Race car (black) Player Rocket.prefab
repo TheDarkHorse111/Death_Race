@@ -695,6 +695,7 @@ GameObject:
   - component: {fileID: 8049518971988050193}
   - component: {fileID: 2407371385033751131}
   - component: {fileID: 3663929459627682011}
+  - component: {fileID: 1052674468439619426}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -955,6 +956,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &1052674468439619426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062210049355621427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0676236, y: 0.7160759, z: 4.4644504}
+  m_Center: {x: 0.0000019073486, y: 0.37999916, z: 0.15580583}
 --- !u!1 &8062280960753050925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7109980233f4a474a8e6c7e6405e864b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lapcount: {fileID: 0}
 --- !u!114 &5974814911611675404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3107,7 +3122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  Score: 0
   DisappearingTime: 40
   CanIUseShiled: 0
 --- !u!114 &8542123334370198391
@@ -3144,8 +3158,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7616119, y: 0.98112106, z: 4.277191}
-  m_Center: {x: -0.023796082, y: 0.5980549, z: -0.087905884}
+  m_Size: {x: 1.7616119, y: 0.8133354, z: 4.277191}
+  m_Center: {x: -0.023796082, y: 0.6819477, z: -0.087905884}
 --- !u!114 &5509749883740865140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3879,7 +3893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9011278665484499937}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 58.877, z: -0.479}
+  m_LocalPosition: {x: 0, y: 115, z: -0.479}
   m_LocalScale: {x: 64.34321, y: 107.877686, z: 0.21907665}
   m_Children: []
   m_Father: {fileID: 8065665844740461283}

@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CheckpointManager : MonoBehaviour
 {
     public int lap = 0;
     public int checkpoint = -1;
-
     int checkpointCount;
     int nextCheckpoint;
     public GameObject lastCP;

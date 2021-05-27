@@ -1098,7 +1098,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  Score: 0
   DisappearingTime: 40
   CanIUseShiled: 0
 --- !u!65 &8834491046213692787
@@ -1192,7 +1191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7714033270028903710}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 76.11, z: 0}
+  m_LocalPosition: {x: 0, y: 110, z: 0}
   m_LocalScale: {x: 64.343, y: 107, z: 1}
   m_Children: []
   m_Father: {fileID: 7197064668297177764}

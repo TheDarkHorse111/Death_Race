@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,17 +9,23 @@ public class PlayerController : MonoBehaviour
     float lastTimeMoving;
     Vector3 lastPos;
     Quaternion lastRot;
+    public Text lapcount;
+    CheckpointManager cp;
 
 
     void ResetLayer() 
     {
         CC.rb.gameObject.layer = 0;
+       
+        
     }
 
 
     private void Start()
     {
         CC = this.GetComponent<CarController>();
+        cp = GetComponent<CheckpointManager>();
+        lapcount = FindObjectOfType<Text>();
     }
     private void Update()
     {
@@ -51,6 +58,7 @@ public class PlayerController : MonoBehaviour
             CC.rb.gameObject.layer = 8;
             Invoke("ResetLayer", 3);
         }
+        lapcount.text = "Lap: " + cp.lap;
         CC.CheckSkidiing();
         CC.CalcEngineSound();
     }
