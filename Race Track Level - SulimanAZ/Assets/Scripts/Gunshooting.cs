@@ -18,6 +18,7 @@ public class Gunshooting : MonoBehaviour
      private float Damge=20f;
      public float fireRate=3f;   
     //public AudioSource sound;
+        public float ImpactForce=60f;
      private float NextTimetoFire=0f;
      public  bool CanIFire = false;
       
@@ -60,20 +61,23 @@ public class Gunshooting : MonoBehaviour
         i.Effects.Play();
         if(guntype==GUNType.MachineGUN){  FindObjectOfType<AudioManager>().Play("MachineGUNSound");}
         else if(guntype==GUNType.RocketGUN) {FindObjectOfType<AudioManager>().Play("RocketGUNSound");} 
-        if (Physics.Raycast(i.Effects.transform.position, i.Effects.transform.forward,out RaycastHit hit,50000f*Time.time))
+        if (Physics.Raycast(i.Aim.transform.position, i.Aim.transform.forward,out RaycastHit hit))
         {
            
          
            
           
-            playerinfo player = hit.transform.GetComponent<playerinfo>();
+            playerinfo player = hit.transform.GetComponentInChildren<playerinfo>();
         //      Debug.Log(hit.transform.name);
             if (player != null)
             {
                if(guntype==GUNType.MachineGUN) player.takedamge(Damge+20f);
                else player.takedamge(Damge);
             }
-           
+
+            if (hit.rigidbody != null)
+                hit.rigidbody.AddForce(-hit.normal * ImpactForce);
+
             GameObject DostroryGo =Instantiate(i.impactEffect,hit.point,Quaternion.LookRotation(hit.normal));
             Destroy(DostroryGo,2f);
             if(guntype==GUNType.MachineGUN){FindObjectOfType<AudioManager>().Play("MachineGUNImpact");}

@@ -6,6 +6,7 @@ using UnityEngine;
 public class GUN
 {    
      public string GUNName;
+     public GameObject Aim;
      public ParticleSystem Effects;
      public GameObject impactEffect;
     

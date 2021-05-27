@@ -18,7 +18,7 @@ public class AudioManager :MonoBehaviour
             s.Source.pitch=s.pitch;
             s.Source.volume=s.volume;
             s.Source.spatialBlend=1.0f;
-            s.Source.minDistance=20f;
+            s.Source.minDistance=30f;
              s.Source.maxDistance=500f;
             s.Source.loop=s.loop;            
         }

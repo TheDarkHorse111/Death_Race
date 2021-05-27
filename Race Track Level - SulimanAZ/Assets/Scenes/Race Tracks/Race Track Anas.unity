@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.6997336, g: 0.5594266, b: 0.38041604, a: 1}
+  m_IndirectSpecularColor: {r: 0.69968563, g: 0.5594073, b: 0.38028604, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6611,7 +6611,7 @@ PrefabInstance:
     - target: {fileID: 1090044100242189038, guid: ac3cbf55c86c9a3449a48bec7e438726,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1090044100242189038, guid: ac3cbf55c86c9a3449a48bec7e438726,
         type: 3}
@@ -15262,6 +15262,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102856725}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1107246440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.9204
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 126.97517
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610933763349405085, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Race car (black) Player Machine Gun '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a10accf55140a6468476004eac10458, type: 3}
 --- !u!1 &1121181905
 GameObject:
   m_ObjectHideFlags: 0
@@ -15355,90 +15424,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121181905}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1122099932
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7222574445373808905, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: Sounds.Array.data[0].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7222574445373808905, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: Sounds.Array.data[1].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 55.615
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 131.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7610933763349405085, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Race car (black) Player Machine Gun '
-      objectReference: {fileID: 0}
-    - target: {fileID: 8781217924361776962, guid: 3a10accf55140a6468476004eac10458,
-        type: 3}
-      propertyPath: lapCounterUI
-      value: 
-      objectReference: {fileID: 1261295020}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3a10accf55140a6468476004eac10458, type: 3}
 --- !u!1 &1133845157
 GameObject:
   m_ObjectHideFlags: 0
@@ -31955,7 +31940,7 @@ PrefabInstance:
     - target: {fileID: 7768917313007177081, guid: bf4e3967a9523434c9257ebb0bf9ac8e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7768917313007177081, guid: bf4e3967a9523434c9257ebb0bf9ac8e,
         type: 3}
@@ -32183,7 +32168,7 @@ PrefabInstance:
     - target: {fileID: 3464316643087873394, guid: 60702be85a3c9604fbff49519d087624,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3464316643087873394, guid: 60702be85a3c9604fbff49519d087624,
         type: 3}
