@@ -30,7 +30,9 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         if (!RaceManager.racing) return;
-           
+
+        
+
         CC.GetInput();
         if (!RaceManager.racing)
         {
@@ -58,7 +60,7 @@ public class PlayerController : MonoBehaviour
             CC.rb.gameObject.layer = 8;
             Invoke("ResetLayer", 3);
         }
-        lapcount.text = "Lap: " + cp.lap;
+        lapcount.text = "Lap: " + (cp.lap+1);
         CC.CheckSkidiing();
         CC.CalcEngineSound();
     }

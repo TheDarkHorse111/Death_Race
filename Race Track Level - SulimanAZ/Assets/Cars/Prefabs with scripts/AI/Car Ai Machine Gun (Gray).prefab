@@ -513,6 +513,8 @@ GameObject:
   - component: {fileID: 8211619315840687014}
   - component: {fileID: 5569460373421350210}
   - component: {fileID: 5331313692248453730}
+  - component: {fileID: 4103950870810869128}
+  - component: {fileID: 2931328084237532043}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -786,8 +788,48 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7588265, y: 1.2652893, z: 4.4488506}
-  m_Center: {x: 0.030768424, y: 0.8400879, z: 0.022138596}
+  m_Size: {x: 1.7588265, y: 1.1859994, z: 4.4488506}
+  m_Center: {x: 0.030768394, y: 0.87973285, z: 0.022138596}
+--- !u!114 &4103950870810869128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991549360434405601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guntype: 1
+  playertype: 0
+  GUNS:
+  - GUNName: LeftGUN
+    Effects: {fileID: 2365092592485901038}
+    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
+      type: 3}
+  - GUNName: RightGUN
+    Effects: {fileID: 1753539263471572474}
+    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
+      type: 3}
+  fireRate: 3
+  CanIFire: 0
+--- !u!114 &2931328084237532043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991549360434405601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9028a3b924cc3934d8c4049d1223cc11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  DisappearingTime: 40
+  CanIUseShiled: 0
 --- !u!1 &5743970025537099718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,8 +1251,6 @@ GameObject:
   - component: {fileID: 5922667405912570584}
   - component: {fileID: 8418291075920773352}
   - component: {fileID: 5408551837527917874}
-  - component: {fileID: 6726632631316329658}
-  - component: {fileID: 7198551242646523812}
   - component: {fileID: 4796635179833332418}
   - component: {fileID: 226441615945019960}
   m_Layer: 0
@@ -1354,44 +1394,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avoidPath: 0
   avoidTime: 0
---- !u!65 &6726632631316329658
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110590045161059588}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5373535, y: 1.2506561, z: 4.159912}
-  m_Center: {x: 0.0079193115, y: 0.7686386, z: -0.0069885254}
---- !u!114 &7198551242646523812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110590045161059588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guntype: 1
-  playertype: 0
-  GUNS:
-  - GUNName: LeftGUN
-    Effects: {fileID: 2365092592485901038}
-    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
-      type: 3}
-  - GUNName: RightGUN
-    Effects: {fileID: 1753539263471572474}
-    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
-      type: 3}
-  fireRate: 3
-  CanIFire: 0
 --- !u!114 &4796635179833332418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,7 +1406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lap: 0
+  lap: -1
   checkpoint: -1
   lastCP: {fileID: 0}
 --- !u!114 &226441615945019960

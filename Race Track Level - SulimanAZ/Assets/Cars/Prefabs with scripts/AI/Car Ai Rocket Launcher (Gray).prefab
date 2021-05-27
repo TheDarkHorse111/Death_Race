@@ -626,6 +626,8 @@ GameObject:
   - component: {fileID: 7553512117260887582}
   - component: {fileID: 6083322619963039994}
   - component: {fileID: 5826073026973601754}
+  - component: {fileID: 9092199993609986224}
+  - component: {fileID: 4004846937297723779}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -899,8 +901,46 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7588265, y: 1.2652893, z: 4.4488506}
-  m_Center: {x: 0.030768424, y: 0.8400879, z: 0.022138596}
+  m_Size: {x: 1.7588265, y: 1.1859994, z: 4.4488506}
+  m_Center: {x: 0.030768394, y: 0.87973285, z: 0.022138596}
+--- !u!114 &9092199993609986224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6657292976921730393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guntype: 0
+  playertype: 0
+  GUNS:
+  - GUNName: RightGUN
+    Effects: {fileID: 4697107506331311331}
+    impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
+  - GUNName: LeftGUN
+    Effects: {fileID: 7982256674272570539}
+    impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
+  fireRate: 3
+  CanIFire: 0
+--- !u!114 &4004846937297723779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6657292976921730393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9028a3b924cc3934d8c4049d1223cc11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  DisappearingTime: 40
+  CanIUseShiled: 0
 --- !u!1 &7613446968139761852
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,9 +956,6 @@ GameObject:
   - component: {fileID: 5410922819723315040}
   - component: {fileID: 7923300842546101584}
   - component: {fileID: 5920533936499947658}
-  - component: {fileID: 7107096434695412623}
-  - component: {fileID: 4950084752545025827}
-  - component: {fileID: 8834491046213692787}
   - component: {fileID: 6442265216354393081}
   - component: {fileID: 5488207984559416084}
   m_Layer: 0
@@ -1062,57 +1099,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avoidPath: 0
   avoidTime: 0
---- !u!114 &7107096434695412623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7613446968139761852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guntype: 0
-  playertype: 0
-  GUNS:
-  - GUNName: RightGUN
-    Effects: {fileID: 4697107506331311331}
-    impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
-  - GUNName: LeftGUN
-    Effects: {fileID: 7982256674272570539}
-    impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
-  fireRate: 3
-  CanIFire: 0
---- !u!114 &4950084752545025827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7613446968139761852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9028a3b924cc3934d8c4049d1223cc11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  DisappearingTime: 40
-  CanIUseShiled: 0
---- !u!65 &8834491046213692787
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7613446968139761852}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7409973, y: 1.1879196, z: 4.0803833}
-  m_Center: {x: -0.008956909, y: 0.8213577, z: -0.0079956055}
 --- !u!114 &6442265216354393081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lap: 0
+  lap: -1
   checkpoint: -1
   lastCP: {fileID: 0}
 --- !u!114 &5488207984559416084

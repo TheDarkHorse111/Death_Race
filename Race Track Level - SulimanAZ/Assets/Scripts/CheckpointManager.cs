@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CheckpointManager : MonoBehaviour
 {
-    public int lap = 0;
+    public int lap = -1;
     public int checkpoint = -1;
     int checkpointCount;
     int nextCheckpoint;

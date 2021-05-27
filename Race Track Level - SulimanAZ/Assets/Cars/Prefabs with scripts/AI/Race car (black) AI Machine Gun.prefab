@@ -1474,9 +1474,6 @@ GameObject:
   - component: {fileID: 365198194879751767}
   - component: {fileID: 1778741185536202359}
   - component: {fileID: 1655233491939551853}
-  - component: {fileID: 8382916996757672748}
-  - component: {fileID: 3952824757360217037}
-  - component: {fileID: 4977889040432423432}
   - component: {fileID: 3095222471575597118}
   - component: {fileID: -5571590222643790544}
   m_Layer: 0
@@ -1620,59 +1617,6 @@ MonoBehaviour:
   brakingSensitivity: 1
   steeringSensitivity: 0.04
   accelSensitivity: 1
---- !u!65 &8382916996757672748
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4382359287688865422}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.671875, y: 0.9650459, z: 4.1842957}
-  m_Center: {x: -0.0024414062, y: 0.62943745, z: -0.12138367}
---- !u!114 &3952824757360217037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4382359287688865422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9028a3b924cc3934d8c4049d1223cc11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  DisappearingTime: 40
-  CanIUseShiled: 0
---- !u!114 &4977889040432423432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4382359287688865422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guntype: 1
-  playertype: 0
-  GUNS:
-  - GUNName: LeftGUN
-    Effects: {fileID: 8908069788416516901}
-    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
-      type: 3}
-  - GUNName: RightGUN
-    Effects: {fileID: 146401607430654889}
-    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
-      type: 3}
-  fireRate: 3
-  CanIFire: 0
 --- !u!114 &3095222471575597118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,7 +1629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lap: 0
+  lap: -1
   checkpoint: -1
   lastCP: {fileID: 0}
 --- !u!114 &-5571590222643790544
@@ -3344,6 +3288,9 @@ GameObject:
   - component: {fileID: 4359779443412018942}
   - component: {fileID: 8240493388623928756}
   - component: {fileID: 7056097148528512820}
+  - component: {fileID: 5962098868700998954}
+  - component: {fileID: 969060071657043930}
+  - component: {fileID: 2888041437494287034}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -3604,6 +3551,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5962098868700998954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383717425220092892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9028a3b924cc3934d8c4049d1223cc11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  DisappearingTime: 40
+  CanIUseShiled: 0
+--- !u!114 &969060071657043930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383717425220092892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guntype: 1
+  playertype: 0
+  GUNS:
+  - GUNName: LeftGUN
+    Effects: {fileID: 8908069788416516901}
+    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
+      type: 3}
+  - GUNName: RightGUN
+    Effects: {fileID: 146401607430654889}
+    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
+      type: 3}
+  fireRate: 3
+  CanIFire: 0
+--- !u!65 &2888041437494287034
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383717425220092892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0676236, y: 0.7767825, z: 4.526184}
+  m_Center: {x: 0.0000019073486, y: 0.40022445, z: 0.18667269}
 --- !u!1 &4383718960091669570
 GameObject:
   m_ObjectHideFlags: 0

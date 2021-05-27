@@ -367,6 +367,8 @@ GameObject:
   - component: {fileID: 698640014608516891}
   - component: {fileID: 209488987848304579}
   - component: {fileID: 6569909501263484698}
+  - component: {fileID: 6538697731632391405}
+  - component: {fileID: 1233190760212011834}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -636,12 +638,52 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3049418755240463997}
-  m_Material: {fileID: 13400000, guid: 01571ba68fb2dad46aa03094ab219579, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.9778442, y: 0.9295807, z: 4.099777}
-  m_Center: {x: 0.019317627, y: 0.8541794, z: -0.058288574}
+  m_Size: {x: 2.0673137, y: 1.0926256, z: 4.5193276}
+  m_Center: {x: 0.019221723, y: 0.7985424, z: 0.027246952}
+--- !u!114 &6538697731632391405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3049418755240463997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9028a3b924cc3934d8c4049d1223cc11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  DisappearingTime: 40
+  CanIUseShiled: 0
+--- !u!114 &1233190760212011834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3049418755240463997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guntype: 1
+  playertype: 1
+  GUNS:
+  - GUNName: LeftGUN
+    Effects: {fileID: 8394616060488076985}
+    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
+      type: 3}
+  - GUNName: RightGUN
+    Effects: {fileID: 6546454468571667173}
+    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
+      type: 3}
+  fireRate: 3
+  CanIFire: 0
 --- !u!1 &3780188855030057238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,9 +1325,6 @@ GameObject:
   - component: {fileID: 8125679003681973769}
   - component: {fileID: 8538022861189807796}
   - component: {fileID: 4039257486037495577}
-  - component: {fileID: 1474394717730501646}
-  - component: {fileID: 5698124679814047761}
-  - component: {fileID: 8516367480585131094}
   - component: {fileID: 4072595579166173407}
   - component: {fileID: 6052113058522150149}
   m_Layer: 0
@@ -1400,59 +1439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc0b73b2e2c5d149922a95cb440232c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1474394717730501646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8124779594098420197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guntype: 1
-  playertype: 1
-  GUNS:
-  - GUNName: LeftGUN
-    Effects: {fileID: 8394616060488076985}
-    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
-      type: 3}
-  - GUNName: RightGUN
-    Effects: {fileID: 6546454468571667173}
-    impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
-      type: 3}
-  fireRate: 3
-  CanIFire: 0
---- !u!114 &5698124679814047761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8124779594098420197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9028a3b924cc3934d8c4049d1223cc11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  DisappearingTime: 40
-  CanIUseShiled: 0
---- !u!65 &8516367480585131094
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8124779594098420197}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7237549, y: 1.111206, z: 4.0683594}
-  m_Center: {x: -0.024780273, y: 0.86657715, z: 0.045295715}
 --- !u!114 &4072595579166173407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,7 +1451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lap: 0
+  lap: -1
   checkpoint: -1
   lastCP: {fileID: 0}
 --- !u!114 &6052113058522150149
