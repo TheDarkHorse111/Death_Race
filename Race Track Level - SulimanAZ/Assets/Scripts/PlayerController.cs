@@ -9,9 +9,9 @@ public class PlayerController : MonoBehaviour
     float lastTimeMoving;
     Vector3 lastPos;
     Quaternion lastRot;
-    public Text lapcount;
+    public Text []lapcountAndPlacement;
     CheckpointManager cp;
-
+    int carRego;
 
     void ResetLayer() 
     {
@@ -25,7 +25,8 @@ public class PlayerController : MonoBehaviour
     {
         CC = this.GetComponent<CarController>();
         cp = GetComponent<CheckpointManager>();
-        lapcount = FindObjectOfType<Text>();
+        lapcountAndPlacement = GameObject.FindObjectOfType<CanvasGroup>().GetComponentsInChildren<Text>();
+        carRego = Leaderboard.RegCar(gameObject.name);
     }
     private void Update()
     {
@@ -60,7 +61,12 @@ public class PlayerController : MonoBehaviour
             CC.rb.gameObject.layer = 8;
             Invoke("ResetLayer", 3);
         }
-        lapcount.text = "Lap: " + (cp.lap+1);
+        Leaderboard.setPos(carRego, cp.lap, cp.checkpoint , cp.timeEntered);
+        string pos = Leaderboard.getPos(carRego);
+        if (lapcountAndPlacement == null) return;
+        lapcountAndPlacement[0].text = "Lap: " + cp.lap;
+        lapcountAndPlacement[1].text = pos;
+
         CC.CheckSkidiing();
         CC.CalcEngineSound();
     }

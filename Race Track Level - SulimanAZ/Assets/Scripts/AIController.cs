@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AIController: MonoBehaviour
 {
@@ -13,11 +14,12 @@ public class AIController: MonoBehaviour
     Vector3 nextTarget;
     int currentWP = 0;
     float totalDistanceToTarget;
-
+    public Text[] lapcountAndPlacement;
     GameObject tracker;
     int currentTrackerWP = 0;
     float lookAhead = 12;
     float lastTimeMoving = 0;
+    int carRego;
 
     CheckpointManager cpm;
 
@@ -41,6 +43,9 @@ public class AIController: MonoBehaviour
         tracker.transform.rotation = cc.rb.gameObject.transform.rotation;
 
         this.GetComponent<Ghost>().enabled = false;
+        lapcountAndPlacement = GameObject.FindObjectOfType<CanvasGroup>().GetComponentsInChildren<Text>();
+        carRego = Leaderboard.RegCar(gameObject.name);
+
     }
 
 
@@ -123,7 +128,12 @@ public class AIController: MonoBehaviour
             accel = Mathf.Lerp(0,1 + accelSensitivity, 1 - CornerFactor);
 
         cc.AiStarter(accel, brake, steer);
+        Leaderboard.setPos(carRego, cpm.lap, cpm.checkpoint, cpm.timeEntered);
+        string pos = Leaderboard.getPos(carRego);
+        if (lapcountAndPlacement == null) return;
+        lapcountAndPlacement[0].text = "Lap: " + cpm.lap;
+        lapcountAndPlacement[1].text = pos;
 
-        
+
     }
 }

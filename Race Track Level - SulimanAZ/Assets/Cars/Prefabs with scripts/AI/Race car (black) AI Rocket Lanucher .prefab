@@ -1106,6 +1106,7 @@ MonoBehaviour:
     Effects: {fileID: 5033987248080454399}
     impactEffect: {fileID: 100006, guid: 7c442b9b6852b8a4f93306f3d154d471, type: 3}
   fireRate: 3
+  ImpactForce: 60
   CanIFire: 0
 --- !u!65 &2404320862124658010
 BoxCollider:
@@ -2062,7 +2063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503ae6ace7b75ab4fb71813911e9d836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lap: -1
+  lap: 0
   checkpoint: -1
   lastCP: {fileID: 0}
 --- !u!114 &5649962786892535578
