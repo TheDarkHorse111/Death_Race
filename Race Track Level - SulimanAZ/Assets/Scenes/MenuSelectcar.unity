@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731725, g: 0.13414745, b: 0.12107873, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -152,14 +152,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotatecube: {fileID: 895015656}
   speedrotate: 10
-  listCar: {fileID: 810763760596556753, guid: 6bd12ad1722fbc349b6964cbb9f32384, type: 3}
+  listCar: {fileID: 2345255604709790045, guid: c495d2e65e97c6c41b91b7164d270e99, type: 3}
   carpointer: 0
   locationcar: {x: 0, y: 0, z: 0}
-  listCarRocketL: {fileID: 810763760596556753, guid: 64416f54a1a40234b8f8bf245e1fa3bd,
+  listCarRocketL: {fileID: 6116797990541344624, guid: e5051b6086b79104a97fedca56d2c597,
     type: 3}
-  listcarscriptGun: {fileID: 810763760596556753, guid: 6bd12ad1722fbc349b6964cbb9f32384,
+  listcarscriptGun: {fileID: 481413262721528239, guid: 39f37cd215038204dae9b5acd5763ca5,
     type: 3}
-  listcarscriptRocketL: {fileID: 810763760596556753, guid: 64416f54a1a40234b8f8bf245e1fa3bd,
+  listcarscriptRocketL: {fileID: 7244624077953788638, guid: 6e9cacc8eb053a04cb9ca35e6ad682c3,
     type: 3}
 --- !u!4 &59409788
 Transform:

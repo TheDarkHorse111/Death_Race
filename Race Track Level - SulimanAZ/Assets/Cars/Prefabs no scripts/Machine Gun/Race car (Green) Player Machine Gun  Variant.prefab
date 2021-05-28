@@ -12,16 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guntype: 0
+  playertype: 0
   GUNS:
   - GUNName: LeftGUN
+    Aim: {fileID: 0}
     Effects: {fileID: 9179911124087426005}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
   - GUNName: 
+    Aim: {fileID: 0}
     Effects: {fileID: 4443787013160121673}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
   fireRate: 3
+  ImpactForce: 60
   CanIFire: 0
 --- !u!1001 &2369271692128133562
 PrefabInstance:
@@ -35,7 +40,37 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1284647747098227919, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620083681804728014, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121683202560360992, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2944097786072089826, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810218800313282061, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941849529836172655, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171725872925876206, guid: 3a10accf55140a6468476004eac10458,
         type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -44,6 +79,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6762238676537311015, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418043898099220112, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7608160523760193055, guid: 3a10accf55140a6468476004eac10458,
         type: 3}
@@ -110,6 +155,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b8aff1ca3117a2b43aedfe829b696349, type: 2}
+    - target: {fileID: 8781217924361776962, guid: 3a10accf55140a6468476004eac10458,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a10accf55140a6468476004eac10458, type: 3}
 --- !u!1 &5295722868080409639 stripped

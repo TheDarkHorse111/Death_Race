@@ -89,6 +89,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   maxSpeed: 150
   currentSpeed: 0
+  Transformation: 0
   SkidSound: {fileID: 8221002119550272109}
   HighAccel: {fileID: 8740516717972136629}
   smoke: {fileID: 19800000, guid: 98c58c8dd46640c49bb5f557afafea7c, type: 3}
@@ -110,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7109980233f4a474a8e6c7e6405e864b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lapcountAndPlacement: []
 --- !u!114 &4875885412247169647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +398,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4795779631662038772}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -664,7 +666,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5751414511180401760}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -1138,7 +1140,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8091853546916823315}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -1306,7 +1308,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8748244912219751802}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 

@@ -7,15 +7,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1654499501504782905, guid: cbb4a40779bbcfe4c9cba87833257967,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2220911634307171920, guid: cbb4a40779bbcfe4c9cba87833257967,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4210866037579230364, guid: cbb4a40779bbcfe4c9cba87833257967,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 178188015d8de3e488bded7842900e68, type: 2}
+    - target: {fileID: 4820162644690267432, guid: cbb4a40779bbcfe4c9cba87833257967,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096378178608704872, guid: cbb4a40779bbcfe4c9cba87833257967,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6980779070281323972, guid: cbb4a40779bbcfe4c9cba87833257967,
         type: 3}
       propertyPath: m_Name
-      value: Racing Car (Green) Player Rocket Variant
+      value: Racing Car (Green) Player Rocket Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 6983662965231991538, guid: cbb4a40779bbcfe4c9cba87833257967,
         type: 3}
@@ -70,6 +90,11 @@ PrefabInstance:
     - target: {fileID: 6983662965231991538, guid: cbb4a40779bbcfe4c9cba87833257967,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346816757140462127, guid: cbb4a40779bbcfe4c9cba87833257967,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

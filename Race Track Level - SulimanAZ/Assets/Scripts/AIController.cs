@@ -80,6 +80,7 @@ public class AIController: MonoBehaviour
             lastTimeMoving = Time.time;
             return;
         }
+
         ProgressTracker();
         Vector3 localTarget;
         if (cc.rb.velocity.magnitude > 1)

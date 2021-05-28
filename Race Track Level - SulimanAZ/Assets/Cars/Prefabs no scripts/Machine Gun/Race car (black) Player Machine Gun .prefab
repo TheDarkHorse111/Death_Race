@@ -69,7 +69,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400291397977901672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -1326,6 +1326,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   maxSpeed: 150
   currentSpeed: 0
+  Transformation: 0
   SkidSound: {fileID: 4829024347144188036}
   HighAccel: {fileID: 5815400448432005636}
   smoke: {fileID: 19800000, guid: 98c58c8dd46640c49bb5f557afafea7c, type: 3}
@@ -1359,6 +1360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7109980233f4a474a8e6c7e6405e864b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lapcountAndPlacement: []
 --- !u!114 &2046928916183237787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,16 +1373,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431511220fb4ed1429cc86ac8ac71451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guntype: 0
+  playertype: 0
   GUNS:
   - GUNName: LeftGUN
+    Aim: {fileID: 0}
     Effects: {fileID: 8682548716117429283}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
   - GUNName: RightGUN
+    Aim: {fileID: 0}
     Effects: {fileID: 2670344224389753574}
     impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d,
       type: 3}
   fireRate: 3
+  ImpactForce: 60
   CanIFire: 0
 --- !u!1 &2177827237816380480
 GameObject:
@@ -3400,7 +3407,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2634691130346805722}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -3690,7 +3697,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4506817058681246784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -3766,7 +3773,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7147447000021483433}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 

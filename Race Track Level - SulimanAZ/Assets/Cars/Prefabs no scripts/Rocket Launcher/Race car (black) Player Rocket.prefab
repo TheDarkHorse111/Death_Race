@@ -69,7 +69,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3369952543638012787}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5222682643448985266}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -2354,6 +2354,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   maxSpeed: 150
   currentSpeed: 0
+  Transformation: 0
   SkidSound: {fileID: 1076510773737163870}
   HighAccel: {fileID: 2107930036503715550}
   smoke: {fileID: 19800000, guid: 98c58c8dd46640c49bb5f557afafea7c, type: 3}
@@ -2387,6 +2388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7109980233f4a474a8e6c7e6405e864b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lapcountAndPlacement: []
 --- !u!1 &6038641370049057580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,7 +3559,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7594442575762711808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 
@@ -3760,7 +3762,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8322584947556362394}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c68c76d1426364b9413a005e17d57a, type: 3}
   m_Name: 

@@ -12,7 +12,32 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1153251854369516082, guid: e3847cd13e9b9194dbf7e036f30e969d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948693407239495388, guid: e3847cd13e9b9194dbf7e036f30e969d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3359989489034762270, guid: e3847cd13e9b9194dbf7e036f30e969d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509749883740865140, guid: e3847cd13e9b9194dbf7e036f30e969d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042918167942284050, guid: e3847cd13e9b9194dbf7e036f30e969d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057109911535692179, guid: e3847cd13e9b9194dbf7e036f30e969d,
         type: 3}
       propertyPath: m_Enabled
       value: 0

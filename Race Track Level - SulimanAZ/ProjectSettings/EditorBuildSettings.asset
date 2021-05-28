@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Race Tracks/Race Track.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/Race Tracks/Race Track Anas.unity
+    guid: 98c47a11ef961254f819bc3f005fe319
+  - enabled: 1
+    path: Assets/Scenes/Race Tracks/RaceTrack-Naser.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Arena/Arena - Naser.unity
+    guid: 7455c57ec3d2ccb46b10f6dba1f3746b
+  - enabled: 1
+    path: Assets/Scenes/MenuSelectcar.unity
+    guid: 14cb100cfea824e489c4e208854bd890
   m_configObjects: {}

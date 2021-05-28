@@ -18,7 +18,10 @@ public class CamSmoth : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (target == null) return;
+        
+        if (target == null)
+            target = GameObject.FindGameObjectWithTag("Player").transform;
+
         Vector3 wantedPosition;
         if (followBehind)
             wantedPosition = target.TransformPoint(0, height, -distance);
