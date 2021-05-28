@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Time.time > lastTimeMoving + 5) 
+        if (Time.time > lastTimeMoving + 3 || CC.gameObject.transform.position.y < -5) 
         {
             CC.rb.gameObject.transform.position = lastPos;
             CC.rb.gameObject.transform.rotation = lastRot;

@@ -87,7 +87,7 @@ public class AIController: MonoBehaviour
         if (cpm == null)
             cpm = GetComponent<CheckpointManager>();
 
-        if (Time.time > lastTimeMoving + 4 )
+        if (Time.time > lastTimeMoving + 4 || cc.gameObject.transform.position.y < -5)
         {
             cc.rb.gameObject.transform.position = cpm.lastCP.transform.position + Vector3.up * 2;
             cc.rb.gameObject.transform.rotation = cpm.lastCP.transform.rotation;
