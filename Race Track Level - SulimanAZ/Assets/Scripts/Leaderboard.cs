@@ -29,7 +29,11 @@ public class Leaderboard
         return carsRegistered;
 
     }
-
+    public static void Reset() 
+    {
+        lb.Clear();
+        carsRegistered = -1;
+    }
     public static void setPos(int rego, int lap, int checkpoint , float time)
     {
         int postion = lap * 1000 + checkpoint;

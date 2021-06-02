@@ -6,7 +6,11 @@ public class HUDManager : MonoBehaviour
 {
 
     CanvasGroup CanvasGroup;
-    
+
+    private void Awake()
+    {
+        Leaderboard.Reset();
+    }
     void Start()
     {
         CanvasGroup = this.GetComponent<CanvasGroup>();
