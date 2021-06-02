@@ -12,27 +12,38 @@ public class PlayerController : MonoBehaviour
     public Text []lapcountAndPlacement;
     CheckpointManager cp;
     int carRego;
+    float finishSteer;
 
     void ResetLayer() 
     {
         CC.rb.gameObject.layer = 0;
-       
         
     }
 
+    private void Awake()
+    {
+        lapcountAndPlacement = GameObject.FindObjectOfType<CanvasGroup>().GetComponentsInChildren<Text>();
+    }
 
     private void Start()
     {
         CC = this.GetComponent<CarController>();
         cp = GetComponent<CheckpointManager>();
-        lapcountAndPlacement = GameObject.FindObjectOfType<CanvasGroup>().GetComponentsInChildren<Text>();
+        finishSteer = Random.Range(-1, 1);
         carRego = Leaderboard.RegCar(gameObject.name);
     }
     private void Update()
     {
         if (!RaceManager.racing) return;
 
-        
+        if (cp.lap == RaceManager.totalLaps + 1)
+        {
+            CC.HighAccel.Stop();
+            CC.Transformation = 0;
+            CC.rotation = finishSteer;
+            CC.Brakes = 0; 
+            return;
+        }
 
         CC.GetInput();
         if (!RaceManager.racing)
@@ -63,11 +74,13 @@ public class PlayerController : MonoBehaviour
         }
         Leaderboard.setPos(carRego, cp.lap, cp.checkpoint , cp.timeEntered);
         string pos = Leaderboard.getPos(carRego);
+        CC.CheckSkidiing();
+        CC.CalcEngineSound();
+
         if (lapcountAndPlacement == null) return;
         lapcountAndPlacement[0].text = "Lap: " + cp.lap;
         lapcountAndPlacement[1].text = pos;
 
-        CC.CheckSkidiing();
-        CC.CalcEngineSound();
+        
     }
 }

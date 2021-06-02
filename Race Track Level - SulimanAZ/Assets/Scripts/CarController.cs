@@ -20,8 +20,8 @@ public class CarController : MonoBehaviour
     [SerializeField]private float currentSpeed;
     private List<WheelCollider> AllWheels = new List<WheelCollider>();
     [HideInInspector]public float Transformation;
-    private float rotation;
-    private float Brakes;
+    [HideInInspector]public float rotation;
+    [HideInInspector]public float Brakes;
     private bool isbraking;
     private float driftFactor;
     private float SteeringAngle = 6f;

@@ -20,7 +20,7 @@ public class AIController: MonoBehaviour
     float lookAhead = 12;
     float lastTimeMoving = 0;
     int carRego;
-
+    float finishSteer;
     CheckpointManager cpm;
 
     private void Awake()
@@ -43,9 +43,10 @@ public class AIController: MonoBehaviour
         tracker.transform.rotation = cc.rb.gameObject.transform.rotation;
 
         this.GetComponent<Ghost>().enabled = false;
-        lapcountAndPlacement = GameObject.FindObjectOfType<CanvasGroup>().GetComponentsInChildren<Text>();
+        
         carRego = Leaderboard.RegCar(gameObject.name);
-
+        finishSteer = Random.Range(-1, 1);
+        cpm = GetComponent<CheckpointManager>();
     }
 
 
@@ -81,7 +82,15 @@ public class AIController: MonoBehaviour
             return;
         }
 
+        if (cpm.lap == RaceManager.totalLaps + 1)
+        {
+            cc.HighAccel.Stop();
+            cc.AiStarter(0, 0, finishSteer);
+            return;
+        }
+
         ProgressTracker();
+
         Vector3 localTarget;
         if (cc.rb.velocity.magnitude > 1)
             lastTimeMoving = Time.time;
